@@ -1,0 +1,23 @@
+<div class="row">
+  <div class="col-lg-12">
+    <h1>レストラン情報</h1>
+
+      <thead>
+        <th>レストラン名</th>
+        <th>電話番号</th>
+        <th>住所</th>
+        <th>url</th>
+      </thead>
+
+
+        <% @restaurants.each do |restaurant| %>
+          <tr>
+            <td><%= restaurant.restaurant_name %></td>
+            <td><%= restaurant.phone_number %></td>
+            <td><%= restauranr.address %></td>
+            <td><%= customer.url %></td>
+            <td><%= link_to '詳細', restaurant, class: "btn btn-default btn-xs" %></td>
+          </tr>
+
+          <% end %>
+
